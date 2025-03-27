@@ -1,3 +1,4 @@
 module.exports = {
-    count: 0
+    count: 0,
+    started: true
 }

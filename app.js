@@ -10,7 +10,7 @@ const options = {}
 module.exports = async function (fastify, opts) {
   setInterval(() => {
     console.info(state)
-    state.count = state.count + 1
+    if (state.started) state.count = state.count + 1
   }, 1000)
   // Place here your custom code!
 
